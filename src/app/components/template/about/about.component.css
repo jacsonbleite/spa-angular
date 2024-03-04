@@ -1,0 +1,36 @@
+.about{
+    max-width: 600px;
+    width: 100%;
+    padding: 1rem;
+}
+.card-header-image{
+    background-image: url(https://www.github.com/jacsonbleite.png);
+    background-size: cover;
+}
+
+.link{
+    text-decoration: none;
+    color:#000;
+    border: none;
+}
+
+.home .title{
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.subtitle{
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+
+.mat-card-content{
+    text-align: left;
+}
+
+@media(max-width: 425px){
+    ::ng-deep .mat-dialog-container{
+        width: 35rem;
+    }
+}

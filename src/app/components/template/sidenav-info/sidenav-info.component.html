@@ -1,0 +1,23 @@
+<mat-sidenav-container class="nav-container">
+    <mat-sidenav id="sidenav" class="sidenav" node="push" closed fixedInViewport="true" position="end">
+        <button mat-icon-button (click)="drawer.toggle()" class="mat-nav-button">
+            <mat-icon>close</mat-icon>
+        </button>
+        <mat-list class="mat-list">
+            <p>Este projeto foi criado em Angular, um poderoso framework JavaScript!</p>
+        </mat-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <!-- <button mat-icon-button (click)="drawer.toggle()" class="mat-nav-button-info">
+            <mat-icon>info</mat-icon>&nbsp;
+            <span>Sobre a página</span>
+        </button> -->
+        <div class="sidenav-content">
+            <button type="button" mat-button (click)="drawer.toggle()">
+                <mat-icon>info</mat-icon>&nbsp;
+                <span>Sobre a página</span>
+            </button>
+        </div>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

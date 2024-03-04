@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "id": "a8f0",
+      "user": "jacsonbleite",
+      "title": "teste",
+      "postContent": "teste"
+    },
+    {
+      "id": "8792",
+      "user": "jacsonbleite",
+      "title": "teste123",
+      "postContent": "teste123456"
+    }
+  ]
+}

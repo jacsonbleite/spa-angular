@@ -1,0 +1,37 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>
+            <h1>Editar Post</h1>
+        </mat-card-title>
+        <mat-card-subtitle>
+            <h2>O que deseja editar?</h2>
+        </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-form-field>
+            <mat-label>Seu usuário do Github:</mat-label>
+            <input matInput [(ngModel)]="data.post.user" />
+            <mat-hint>Digite seu nome de usuário, por exemplo: &#64;jackie</mat-hint>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Título do Post:</mat-label>
+            <input matInput [(ngModel)]="data.post.title" />
+            <mat-hint>Ex.: A volta dos que não foram</mat-hint>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="texArea">
+            <mat-label>Seu contetúdo:</mat-label>
+            <textarea matInput class="textAreaContent" [(ngModel)]="data.post.postContent"></textarea>
+        </mat-form-field>
+
+        <mat-card-actions align="end">
+            <button mat-button color="primary" (click)="update()"
+                [disabled]="data.post.user && data.post.title && data.post.postContent ? false : true">
+                Salvar <mat-icon>check</mat-icon>
+            </button>
+            <button mat-button color="warn" (click)="cancel()">
+                {{data.post.postContent == "" ? "Voltar" : "Cancelar"}}
+                <mat-icon>cancel</mat-icon>
+            </button>
+        </mat-card-actions>
+    </mat-card-content>
+</mat-card>

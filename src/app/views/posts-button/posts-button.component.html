@@ -1,0 +1,6 @@
+<button mat-icon-button color="{{liked === false ? '' : 'warn' }}" (click)="like()">
+    <mat-icon>{{liked ? "favorite" : "favorite_border"}}</mat-icon>
+</button>
+<button mat-icon-button color="{{unliked === false ? '' : 'primary'}}" (click)="unlike()">
+    <mat-icon>{{unliked ? 'thumb_down' : 'thumb_down_border'}}</mat-icon>
+</button>
